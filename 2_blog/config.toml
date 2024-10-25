@@ -1,0 +1,44 @@
+baseURL = 'http://example.org/'
+languageCode = 'ru-ru'
+title = 'Математический блог'
+theme="archie"
+
+
+# Подсветка кода
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "yourDisqusShortname"
+
+paginate=3 # статей на странице
+
+[params]
+	mode="auto" # цветовой режим → светлый, темный, переключатель или автоматический
+	useCDN=false # не используйте CDN для шрифтов и значков, вместо этого обслуживайте их локально.
+	subtitle = "Тип проекта: составные страницы - блог"
+	mathjax = true # включить поддержку MathJax
+	katex = true # включить поддержку KaTeX
+	mainSelections = ["posts"]
+
+# Пункты главного меню
+
+[[menu.main]]
+name = "Главная"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Все публикации"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "О блоге"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Теги"
+url = "/tags"
+weight = 4
